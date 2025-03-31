@@ -1,0 +1,8 @@
+参考サイト
+https://g-light.hatenadiary.com/entry/2021/03/03/215138：WSL2にMinecraftサーバーを導入してみる
+https://oldbigbuddha.dev/posts/my-server-for-minecraft：身内向けマイクラ鯖をDockerで構築する
+https://qiita.com/sugimochi_1019/items/c022277d48bf6eb398e6：DockerでMinecraft Serverを立てる
+
+メモ
+・itzg/minecraft-serverでサーバーの起動に必要なものはすべてインストールされているっぽい(javaのインストール等)
+・サーバー作成時に作成されるops.jsonで管理者権限を付与できる

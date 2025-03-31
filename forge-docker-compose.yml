@@ -1,0 +1,54 @@
+services:
+    mc:
+        container_name: mc
+        # use the latest version of the itzg/minecraft-server image
+        # image: itzg/minecraft-server dockefileでビルドするためコメントにしとおく
+        build: 
+            context: ./dockerfiles
+            dockerfile: Dockerfile
+        ports:
+            # expose the Minecraft server port outside of container
+            - "25565:25565"
+        tty: true
+        stdin_open: true  
+        environment:
+            # REQUIRED for all types
+            EULA: "TRUE"
+            # Set server type (vs the default of vanilla) サーバーの種類を指定
+            TYPE: "FABRIC"
+            DEBUG: "true"
+            SERVER_NAME: "Test_Minecraft_Server"
+            MODE: "survival"                    # サーバーのモードを指定
+            DIFFICULTY: "hard"                  # 難易度を指定
+            FORCE_GAMEMODE: "true"              # 難易度を固定化
+            PVP: "true"                         # ユーザー同士のダメージを有効にするか
+            ANNOUNCE_PLAYER_ACHIEVEMENTS: "true"
+
+            ALLOW_NETHER: "true"
+            SPAWN_NPCS: "true"
+            SPAWN_ANIMALS: "true"
+            SPAWN_MONSTERS: "true"
+            # HARDCORE: false                   # trueにするとハードコアになるはず
+            SNOOPER_ENABLED: false              # マインクラフトにデータを送信するか
+            SPAWN_PROTECTION: 0
+            VIEW_DISTANCE: 12                   # 描画距離
+            MAX_PLAYERS: 10                     # 最大プレイヤー数
+            ONLINE_MODE: "true"                 # オンラインモードを有効にするか
+            MEMORY: "2G" # メモリ
+        volumes:
+            # 今回はローカルにマウントする、サーバーが重くなることがあれば名前付きボリュームを使用する
+            # use a named, managed volume for data volume 
+            - ./mc_data:/data
+            # modを格納しておく場所 attach local host directory "mods" in same directory as this compose file
+            # modsにmodを入れる all mods in this directory get copied into /data/mods at startup 
+            - ./mods:/mods:ro      
+        # restart: always
+        deploy:
+            resources:
+                limits:
+                    memory: 2.5G
+
+# volumes:
+# declared the named volume, but use default/local storage engine
+# ローカルにマウントするためコメントアウト
+# mc_forge: {}

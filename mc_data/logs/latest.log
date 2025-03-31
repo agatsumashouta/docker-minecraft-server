@@ -1,0 +1,45 @@
+[14:28:10] [main/INFO]: Loading Minecraft 1.21.5 with Fabric Loader 0.16.10
+[14:28:10] [main/INFO]: Loading 4 mods:
+	- fabricloader 0.16.10
+	   \-- mixinextras 0.4.1
+	- java 21
+	- minecraft 1.21.5
+[14:28:10] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/data/libraries/net/fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[14:28:14] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[14:28:18] [main/INFO]: Loaded 1373 recipes
+[14:28:18] [main/INFO]: Loaded 1484 advancements
+[14:28:18] [Server thread/INFO]: Starting minecraft server version 1.21.5
+[14:28:18] [Server thread/INFO]: Loading properties
+[14:28:18] [Server thread/INFO]: Default game type: SURVIVAL
+[14:28:18] [Server thread/INFO]: Generating keypair
+[14:28:18] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:28:18] [Server thread/INFO]: Using epoll channel type
+[14:28:18] [Server thread/INFO]: Preparing level "world"
+[14:28:18] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[14:28:19] [Worker-Main-8/INFO]: Preparing spawn area: 0%
+[14:28:19] [Server thread/INFO]: Time elapsed: 269 ms
+[14:28:19] [Server thread/INFO]: Done (0.598s)! For help, type "help"
+[14:28:19] [Server thread/INFO]: Starting remote control listener
+[14:28:19] [Server thread/INFO]: Thread RCON Listener started
+[14:28:19] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[14:29:19] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[14:35:40] [User Authenticator #1/INFO]: UUID of player syoutaagatsuma is b384a5eb-2179-43be-8d55-e43a7f3a05bb
+[14:35:40] [Server thread/INFO]: syoutaagatsuma[/172.18.0.1:33884] logged in with entity id 58 at (7.5, 76.0, 65.5)
+[14:35:41] [Server thread/INFO]: syoutaagatsuma joined the game
+[14:35:44] [Server thread/INFO]: syoutaagatsuma lost connection: Disconnected
+[14:35:44] [Server thread/INFO]: syoutaagatsuma left the game
+[14:36:44] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[14:40:33] [RCON Listener #1/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 started
+[14:40:33] [Server thread/INFO]: [Rcon: Stopping the server]
+[14:40:33] [RCON Client /0:0:0:0:0:0:0:1 #2/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 shutting down
+[14:40:33] [Server thread/INFO]: Stopping server
+[14:40:33] [Server thread/INFO]: Saving players
+[14:40:33] [Server thread/INFO]: Saving worlds
+[14:40:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[14:40:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[14:40:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[14:40:33] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[14:40:33] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:40:33] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:40:33] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[14:40:33] [Server thread/INFO]: Thread RCON Listener stopped
